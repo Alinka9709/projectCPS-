@@ -1,0 +1,32 @@
+.footer__content {
+    text-align: center;
+    line-height: 16px;
+    color: #7E7E82;
+    ;
+    opacity: 72%;
+   font-size: 14px;
+   padding: 38px 16px 5px 32px;
+  background: #F2F2F2;
+
+
+    @media(min-width:768px){
+        display: flex;
+     
+        justify-content:space-between;
+        padding-top: 70px;
+    }
+
+    &__copy {
+        
+        margin-bottom: 16px;
+        @media(min-width: 768px){
+            width: 218px;
+        }
+    }
+    &__copyt{
+        @media(min-width: 1120px) {
+            width: 320px;
+        }
+    }
+    }
+

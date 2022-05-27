@@ -1,0 +1,101 @@
+.menu:not(:nth-child(2)) {
+    padding: 0 16px;
+  }
+  @media (min-width: 768px) {
+    .menu:not(:nth-child(2)) {
+      padding: 0 63px;
+    }
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: flex-end;
+        padding: 42px 32px 0 0;
+    }
+    &__logo{
+        margin-right: auto;
+        margin-left: 15px;
+        @media(min-width:1120px){
+            display: none;
+        }
+    }
+    &__repair {
+        margin-right: 15px;
+        position: relative;
+      }
+      &__call,
+      &__chat,
+      &__profile
+      {
+  display: none;
+  @media (min-width: 768px){
+    display: block;  
+    margin-right: 15px;
+}
+@media(min-width:1120px){
+    display: none;
+}
+}
+&__span {
+    display: none;
+    @media(min-width:1120px){
+        display: inline-block;
+        padding-right: 8px;
+    }
+}
+&__repair {
+      margin-right: 15px;
+      position: relative;
+      @media (min-width: 768px){
+        padding-left: 27px;
+    }
+    @media(min-width:1120px){
+        display: flex;
+        align-items: center;
+    }
+    }
+&__repair::before {
+ content: "";
+ height: 32px;
+ width: 2px;
+ background-color: #eaeaea;
+ left: -50%;
+ top: 10px;
+ position: absolute;
+ @media (min-width: 768px){
+  left: 6%;
+  }
+@media(min-width:1120px){
+    display: none;
+}
+  }
+  &__burger{
+    @media (min-width: 768px){
+    position: relative;
+    padding-right: 27px;
+  }
+  @media(min-width:1120px){
+    display: none;
+}
+}
+  &__burger::after{
+    @media (min-width: 768px){
+    content: "";
+    height: 32px;
+    width: 2px;
+    background-color: #eaeaea;
+    
+    right: 5%;
+    top: 10px;
+    position: absolute;
+  }
+  }
+  &__checkstatus{
+    @media(min-width:1120px){
+        display: flex;
+    align-items: center;
+    }
+  }
+  }
